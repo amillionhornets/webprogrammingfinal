@@ -41,9 +41,11 @@ a:visited{
     margin-right: 25%;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: overline;
 }
 
 .sillyCarIMG{
     float: right;
     height: 30%;
+    margin-right: 10px;
 }
