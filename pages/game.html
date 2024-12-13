@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guessing Game</title>
+    <link rel="stylesheet" href="../styles/game.css">
 </head>
 <body>
-    
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="apiFetchDemo.html">API Calls</a></li>
+        </ul>
+    </nav>
+    <h1>There is a random number between 1 and 100</h1>
+    <label>Guess a number</label>
+    <input type="text" id="numGuessed">
+    <input type="button" onclick="guess()" value="Submit" id="tryAgain"><br>
+    <img src="" id="won" alt="">
+    <p id="outcome"></p>
+    <p id="guessesMade"></p>
+    <script src="../scripts/game.js"></script>
 </body>
 </html>

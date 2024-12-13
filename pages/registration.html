@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <link rel="stylesheet" href="../styles/registration.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="apiFetchDemo.html">API Calls</a></li>
+        </ul>
+    </nav>
+    <form class="register">
+        <label for="Fname">First Name
+            <input type="text" name="fname" pattern="[A-Za-z\s]+" title="only letters">
+        </label>
+        
+        <label for="Lname">Last Name
+            <input type="text" name="lname" pattern="[A-Za-z\s]+" title="only letters">
+        </label>
+        
+        <label for="emailOrPhoneNum">Mobile Number or Email
+            <input type="text" name="emailOrPhoneNum" 
+                pattern="(^\d{10}$)|(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$)" 
+                title="Enter a  10-digit mobile number or an email">
+        </label>
+        
+        <label for="pass">Password
+            <input type="password" name="password" id="password" 
+                pattern=".{6,}" 
+                title="Password must be at least 6 characters long.">
+        </label>
+        
+        <label for="rePass">Re-enter Password
+            <input type="password" name="confirm_password" id="confirm_password" 
+                pattern=".{6,}" 
+                title="Passwords must match.">
+        </label>
+        
+        <button type="submit">Submit</button>
+    </form>
     
+    <script src="../scripts/register.js"></script>
 </body>
 </html>
