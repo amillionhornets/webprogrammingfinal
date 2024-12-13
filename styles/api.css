@@ -29,3 +29,38 @@ nav > ul > li > a{
 a:visited{
     color: black;
 }
+
+#userTable {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+.user-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    height: auto;
+}
+
+#name{
+    color: #F8D4F6;
+}
+
+.user-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.user-card p strong {
+    font-weight: bold;
+}
+
+.user-card .label {
+    color: #555;
+    font-weight: bold;
+}
